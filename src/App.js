@@ -33,7 +33,7 @@ function App() {
         </div>
         <Card.Subtitle id='author' className="blockquote-footer text-end">{quote.from}</Card.Subtitle>
         <Stack direction="horizontal" className="pt-4">
-        <Button id='tweet-quote' variant="dark" target='blank' href='twitter.com/intent/tweet'><FontAwesomeIcon icon={faTwitter} size="xl"  className="link-opacity-50-hover"></FontAwesomeIcon></Button>
+        <Button id='tweet-quote' variant="dark" target='_blank' href='https://www.twitter.com/intent/tweet'><FontAwesomeIcon icon={faTwitter} size="xl"  className="link-opacity-50-hover"></FontAwesomeIcon></Button>
         <Button id='new-quote' className="ms-auto" variant="dark" onClick={() => setQuote(randomQuote)}>New Quote</Button>
         </Stack>
       </Card.Body>
