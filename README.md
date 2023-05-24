@@ -8,7 +8,7 @@
 
   [Project Requirements](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine)
 
-  [Random Quote Machine](https://drive.google.com/file/d/1OX9IKHGp_kgQ9B41PQ3a5MMg-jOlVZID/view?usp=sharing)
+  [Random Quote Machine](https://jfranklin12.github.io/random-quote-machine/)
 
    ![Homepage](./src/images/homepage.jpg)
 
