@@ -5,9 +5,11 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Stack from 'react-bootstrap/Stack'
 import quotes from './quotes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -26,12 +28,14 @@ function App() {
     
       <Card.Body>
         <div className="quote-text">
-        <FontAwesomeIcon icon={faQuoteLeft} />
-        <Card.Title id='text'>{quote.text}</Card.Title>
+        <FontAwesomeIcon icon={faQuoteLeft} size='2xl'/>
+        <Card.Title id='text' className="text-center">{quote.text}</Card.Title>
         </div>
         <Card.Subtitle id='author' className="blockquote-footer text-end">{quote.from}</Card.Subtitle>
-        <Button id='new-quote' onClick={() => setQuote(randomQuote)}>New Quote</Button>
-        <Card.Link id='tweet-quote' target='blank' href='twitter.com/intent/tweet'>Tweet Quote</Card.Link>
+        <Stack direction="horizontal" className="pt-4">
+        <Button id='tweet-quote' variant="dark" target='blank' href='twitter.com/intent/tweet'><FontAwesomeIcon icon={faTwitter} size="xl"  className="link-opacity-50-hover"></FontAwesomeIcon></Button>
+        <Button id='new-quote' className="ms-auto" variant="dark" onClick={() => setQuote(randomQuote)}>New Quote</Button>
+        </Stack>
       </Card.Body>
     </Card>
     </Col>
