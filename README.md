@@ -10,7 +10,7 @@
 
   [Random Quote Machine](https://drive.google.com/file/d/1OX9IKHGp_kgQ9B41PQ3a5MMg-jOlVZID/view?usp=sharing)
 
-   ![Homepage](#)
+   ![Homepage](./src/images/homepage.jpg)
 
   ## Table of Content
   - [Installation](#installation)
